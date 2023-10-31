@@ -68,6 +68,20 @@ p{
   letter-spacing: 0.05rem;
 }
 
+.section-title{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.section-title span{
+  color: crimson;
+}
+
 /* Header Section starts here */
 #header {
   position: fixed;
@@ -444,6 +458,81 @@ p{
   width: 98%;
   z-index: -1;
 }
+/* end of about section */
+
+/* start of the contact section */
+#contact .contact{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#contact .contact-items{
+  width: 100%;
+}
+
+#contact .contact-item{
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #747474;
+  transition: 0.5s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+  box-shadow: 0px 0px 5px 0 #747474;
+}
+
+#contact .icon{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+/* end of contact section */
+
+/* start of footer section */
+#footer{
+  background-color: #485564;
+}
+
+#footer .footer{
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#footer h2{
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* continue tomorrow */
 
 /* my keyframes */
 @keyframes text_reveal_box{
@@ -509,7 +598,54 @@ p{
   padding-left: 60px;
 }
 
-/* continue tomorrow */
+#about .col-right{
+  text-align: left;
+  padding: 30px;
+}
+
+#about .col-right h1{
+  text-align: left;
+}
+
+/* end of about */
+
+/* start of contact */
+#contact .contact{
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 20vh;
+}
+
+#contact .contact-items{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#contact .contact-item{
+  width: 30%;
+  margin: 0;
+  flex-direction: row; 
+}
+
+#contact .contact-item .icon{
+  height: 80px;
+  width: 80px;
+}
+
+#contact .contact-item .icon img{
+  object-fit: contain;
+}
+
+#contact .contact-item .contact-info{
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
 }
 
 
