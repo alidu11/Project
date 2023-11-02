@@ -241,7 +241,7 @@ p{
 
 /* start of hero section */
 #hero{
-  background-image: url(/hero.avif);
+  background-image: url(./img/hero.avif);
   background-size: cover;
   position: relative;
   background-position: top center;
